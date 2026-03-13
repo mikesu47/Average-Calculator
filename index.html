@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Average Grade Calculator</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Courier+Prime:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Average Grade Calculator</h1>
+      <p>by : Mike</p>
+      <p>Lagay mo lang grades mo dyan boi</p>
+
+      <form id="gradeForm">
+        <input type="number" id="sub1" placeholder="sub1" min="0" max="100" />
+        <input type="number" id="sub2" placeholder="sub2" min="0" max="100" />
+        <input type="number" id="sub3" placeholder="sub3" min="0" max="100" />
+        <input type="number" id="sub4" placeholder="sub4" min="0" max="100" />
+        <input type="number" id="sub5" placeholder="sub5" min="0" max="100" />
+        <input type="number" id="sub6" placeholder="sub6" min="0" max="100" />
+        <input type="number" id="sub7" placeholder="sub7" min="0" max="100" />
+        <input type="number" id="sub8" placeholder="sub8" min="0" max="100" />
+
+        <button type="button" onclick="calculateAverageSilent()">
+          Calculate
+        </button>
+        <button type="button" id="clearBtn" onclick="clearGrades()">
+          Clear All
+        </button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="index.js" defer></script>
+  </body>
+</html>
